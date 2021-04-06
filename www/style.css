@@ -5,5 +5,21 @@ nav a {
 }
 
 header h1 {
-  margin: 1em 0em;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  margin: 0.5rem 0;
+}
+
+section h2 {
+  margin: 0.8rem auto;
+}
+
+.card {
+  max-width: 365px;
+  margin: 0.3rem auto;
 }
