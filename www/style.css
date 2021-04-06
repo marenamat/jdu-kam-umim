@@ -1,0 +1,9 @@
+nav a {
+  color: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+header h1 {
+  margin: 1em 0em;
+}
