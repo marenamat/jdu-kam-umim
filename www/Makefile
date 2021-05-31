@@ -1,5 +1,5 @@
 FILES := index.html bootstrap.min.css style.css
-TARGET := trezor:/home/www/jdukamumim.cz/
+TARGET := trezor:/home/www/vimkamjdu.cz/
 
 all:
 	echo
