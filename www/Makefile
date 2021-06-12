@@ -11,4 +11,7 @@ all: $(addprefix $(BUILD)/,$(FILES))
 install: Makefile all
 	rsync -avvz --delete-after $(BUILD)/ $(TARGET)
 
-.PHONY: install all
+clean:
+	rm -rf $(BUILD)
+
+.PHONY: install all clean
