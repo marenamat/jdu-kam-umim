@@ -1,10 +1,14 @@
-FILES := index.html bootstrap.min.css style.css
+FILES := index.html bootstrap.min.css style.css static/cesta-lesem.jpg
 TARGET := trezor:/home/www/vimkamjdu.cz/
+BUILD := build
 
-all:
-	echo
+$(BUILD)/%: %
+	mkdir -p $(dir $@)
+	cp $< $@
 
-install: Makefile $(FILES)
-	rsync -avvz --delete-after $(FILES) $(TARGET)
+all: $(addprefix $(BUILD)/,$(FILES))
+
+install: Makefile all
+	rsync -avvz --delete-after $(BUILD)/ $(TARGET)
 
 .PHONY: install all
