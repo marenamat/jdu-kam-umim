@@ -1,4 +1,4 @@
-FILES := index.html bootstrap.min.css style.css static/cesta-lesem.jpg static/logo-web.png
+FILES := index.html bootstrap.min.css bootstrap.bundle.js style.css static/cesta-lesem.jpg static/logo-web.png
 TARGET := trezor:/home/www/vimkamjdu.cz/
 BUILD := build
 
